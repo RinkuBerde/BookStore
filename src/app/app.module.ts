@@ -9,15 +9,18 @@ import { FormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { SignupComponent } from './Components/signup/signup.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,MatFormFieldModule,FormsModule,MatToolbarModule,
-    MatInputModule,MatButtonModule
+    MatInputModule,MatButtonModule,MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
