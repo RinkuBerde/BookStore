@@ -1,4 +1,4 @@
-<form>
+<form [formGroup]="signupForm" (ngSubmit)="Onsignup()">
     <div class="box">
         <div class="container">
             <div>
@@ -20,26 +20,26 @@
             <div class="Input">
                 <span class="heading1">Full Name</span>
                 <mat-form-field appearance="outline">
-                    <input matInput type="text" />
+                    <input matInput formControlName="fullName" type="text" />
                 </mat-form-field>
 
             </div>
             <div class="Input">
                 <span class="heading1">Email id</span>
                 <mat-form-field appearance="outline">
-                    <input matInput type="email" />
+                    <input matInput formControlName="email" type="email" />
                 </mat-form-field>
             </div>
             <div class="Input">
                 <span class="heading1">Password</span>
                 <mat-form-field appearance="outline">
-                    <input matInput type="password" />
+                    <input matInput formControlName="password" type="password" />
                 </mat-form-field>
             </div>
             <div class="Input">
                 <span class="heading1">Mobile Number </span>
                 <mat-form-field appearance="outline">
-                    <input matInput  type="number" />
+                    <input matInput formControlName="phone" type="number" />
                 </mat-form-field>
             </div>
             <div id="loginbtn">
