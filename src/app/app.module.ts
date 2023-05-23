@@ -12,16 +12,20 @@ import { MatButtonModule } from '@angular/material/button';
 import { SignupComponent } from './Components/signup/signup.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,MatFormFieldModule,FormsModule,MatToolbarModule,
-    MatInputModule,MatButtonModule,MatPaginatorModule,ReactiveFormsModule,BrowserAnimationsModule
+    MatInputModule,MatButtonModule,MatPaginatorModule,ReactiveFormsModule,BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
